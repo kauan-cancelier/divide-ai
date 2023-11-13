@@ -4,6 +4,9 @@ import NewUser from '../views/users/New';
 import Index from '../views/home/Index';
 import ProfileIndex from '../views/users/profile/Index';
 import MessagesIndex from '../messages/Index';
+import ContractIndex from '../views/contract/Index';
+import ContractShow from '../views/contract/Show';
+import SearchIndex from '../views/search/Index';
 
 const AppRouter = () => {
     return (
@@ -14,6 +17,9 @@ const AppRouter = () => {
                 <Route path="/index" exact element={<Index />} />
                 <Route path="/profile" exact element={<ProfileIndex />} />
                 <Route path="/messages" exact element={<MessagesIndex />} />
+                <Route path="/contracts" exact element={<ContractIndex />} />
+                <Route path="/contracts/show/" exact element={<ContractShow />}/>
+                <Route path="/search" exact element={<SearchIndex />}/>
 
             </Routes>
         </Router>
